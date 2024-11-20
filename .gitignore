@@ -1,0 +1,65 @@
+# .NET-specific files
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+*.pdb
+*.cache/
+*.ilk
+*.log
+*.vs/
+
+# ASP.NET Core-specific files
+appsettings.*.json
+!appsettings.json  # Keep the base appsettings file
+launchSettings.json
+
+# Dependency directories
+packages/
+node_modules/
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+*.swp
+*.sln.ide
+
+# Environment-specific files
+.env
+.env.*.local
+
+# Build and publish outputs
+artifacts/
+publish/
+wwwroot/dist/
+wwwroot/.vs/
+
+# Logs and debug-specific files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Rider (JetBrains) files
+.idea/
+*.iml
+
+# Coverage and test results
+TestResults/
+*.coverage
+*.coveragexml
+*.trx
+
+# Docker files
+*.container.json

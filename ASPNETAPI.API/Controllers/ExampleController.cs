@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 
 
-namespace Metaufiq.Simple.API.Controller
+namespace ASPNETAPI.API
 {
   [ApiController]
   [Route("[controller]")]

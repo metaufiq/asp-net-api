@@ -1,3 +1,4 @@
+using System.Reflection;
 using Microsoft.OpenApi.Models;
 
 namespace ASPNETAPI.API{
@@ -26,6 +27,21 @@ namespace ASPNETAPI.API{
                   });
           });
           services.AddControllers();
+
+          // DI 註冊
+          string[] projects = { "ASPNETAPI.Data" };
+
+          foreach (var projectName in projects)
+          {
+              Assembly.Load(projectName).GetTypes()
+                  .Where(p => p.Namespace != null)
+                  .ToList()
+                  .ForEach(item =>
+                  {
+                    //load the domain and its interface here
+                                // Register interface and its implementation
+                  });
+          }
       }
 
       // Configure is used to set up the HTTP request pipeline

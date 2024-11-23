@@ -1,6 +1,3 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
-
 namespace ASPNETAPI.API
 {
     public class LocalEntryPoint

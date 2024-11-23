@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{5121a47b-5a0a-4a47-88f4-950f265d70c1}") = "ASPNETAPI.API", "ASPNETAPI.API\ASPNETAPI.API.csproj", "{15152072-6245-42db-bc0c-7847043524a3}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNETAPI.Data", "ASPNETAPI.Data\ASPNETAPI.Data.csproj", "{13789D89-945C-44A5-8FBE-09E813EA2657}"
 EndProject
 Global

@@ -33,14 +33,15 @@ namespace ASPNETAPI.API{
 
           foreach (var projectName in projects)
           {
-              Assembly.Load(projectName).GetTypes()
-                  .Where(p => p.Namespace != null)
-                  .ToList()
-                  .ForEach(item =>
-                  {
-                    //load the domain and its interface here
-                                // Register interface and its implementation
-                  });
+            Assembly.Load(projectName).GetTypes()
+              .Where(p => p.Namespace != null && p.Namespace.Contains("Interfaces"))
+              .ToList()
+              .ForEach(item =>
+              {
+
+                var service = Assembly.Load(projectName).GetTypes().Where(p =>p.Name.Equals(item.Name.Substring(1))).Single();
+                services.AddScoped(item, service);
+              });
           }
       }
 
